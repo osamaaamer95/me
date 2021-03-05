@@ -87,7 +87,7 @@ module.exports = {
           css: [
             {
               h1: {
-                color: theme('colors.red.300'),
+                color: theme('colors.red.500'),
                 fontFamily: 'League Spartan',
                 fontWeight: 700,
               },

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { ThemeToggler } from 'gatsby-plugin-dark-mode';
+import ThemeChanger from '../components/ThemeChanger';
 
 const BaseLayout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,26 +19,7 @@ const BaseLayout: React.FC = ({ children }) => {
         <div className="dark:text-gray-200">
           {data.site.siteMetadata?.title}
         </div>
-        <ThemeToggler>
-          {({
-            theme,
-            toggleTheme,
-          }: {
-            theme: 'light' | 'dark';
-            toggleTheme: (theme: 'light' | 'dark') => void;
-          }) => (
-            <label className="text-xs dark:text-gray-400">
-              <input
-                type="checkbox"
-                onChange={(e) =>
-                  toggleTheme(e.target.checked ? 'dark' : 'light')
-                }
-                checked={theme === 'dark'}
-              />{' '}
-              Dark mode
-            </label>
-          )}
-        </ThemeToggler>
+        <ThemeChanger />
       </div>
       <div className="flex flex-1">{children}</div>
       <footer className="p-2 bottom-0 text-center dark:bg-gray-700 text-xs text-gray-400">

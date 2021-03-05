@@ -4,8 +4,8 @@ import BaseLayout from '../layouts/BaseLayout';
 const IndexPage = () => {
   return (
     <BaseLayout>
-      <div className="bg-white p-8 dark:bg-gray-800 text-pink-800 dark:text-yellow-200">
-        <article className="prose dark:prose-dark">
+      <div className="bg-white p-8 w-full dark:bg-gray-800">
+        <article className="prose dark:prose-dark mx-auto w-full">
           <h1>Hi! My name is Osama.</h1>
           <h2>Welcome to my personal slice of the web!</h2>
           <p>

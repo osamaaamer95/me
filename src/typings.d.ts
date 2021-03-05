@@ -1,5 +1,14 @@
 declare module 'gatsby-plugin-dark-mode';
 
+// interface customWindow extends Window {
+// }
+
+interface Window {
+  __theme: 'light' | 'dark';
+  __onThemeChange?: any;
+  __setPreferredTheme?: any;
+}
+
 interface CSSModule {
   [className: string]: string;
 }
