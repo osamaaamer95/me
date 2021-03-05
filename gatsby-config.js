@@ -3,7 +3,7 @@ module.exports = {
     title: "osamaaamer",
     description: "osamaaamer",
     author: "@osamaaamer95",
-    siteUrl: "https://osamaaamer.com"
+    siteUrl: "https://osamaaamer.com",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
