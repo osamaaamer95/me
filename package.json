@@ -33,8 +33,16 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.1"
+    "@types/react-dom": "^17.0.1",
+    "autoprefixer": "^10.2.4",
+    "gatsby-plugin-emotion": "^6.0.0",
+    "postcss": "^8.2.7",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.0.3",
+    "twin.macro": "^2.3.0"
   }
 }
