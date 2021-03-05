@@ -36,6 +36,12 @@ module.exports = {
       },
       __key: 'pages',
     },
-    'gatsby-plugin-emotion',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [require('tailwindcss')],
+      },
+    },
+    'gatsby-plugin-dark-mode',
   ],
 };

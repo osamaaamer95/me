@@ -1,15 +1,12 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import tw from 'twin.macro';
-
-const Main = tw.main`px-12 py-8 md:p-16`;
-const Article = tw.article`prose`;
+import BaseLayout from '../layouts/BaseLayout';
 
 const NotFoundPage = () => {
   return (
-    <Main>
+    <BaseLayout>
       <title>Not found</title>
-      <Article>
+      <article>
         <h1>Page not found</h1>
         <p>
           Sorry{' '}
@@ -28,8 +25,8 @@ const NotFoundPage = () => {
           <br />
           <Link to="/">Go home</Link>.
         </p>
-      </Article>
-    </Main>
+      </article>
+    </BaseLayout>
   );
 };
 
