@@ -19,7 +19,10 @@ const BaseLayout: React.FC = ({ children }) => {
     <>
       <SEO title="Home" />
       <StaticImage
-        className="fixed top-0 left-0 w-full h-screen z-0 dark:bg-gray-800 opacity-5 dark:opacity-100"
+        className="top-0 left-0 w-full h-screen z-0 dark:bg-gray-800 opacity-5 dark:opacity-100"
+        style={{
+          position: 'fixed',
+        }}
         imgClassName=""
         src="../images/pattern2.png"
         layout="fullWidth"
