@@ -6,7 +6,7 @@ const IndexPage = () => {
   return (
     <BaseLayout>
       <SEO title="Home" />
-      <div className="bg-white p-8 w-full dark:bg-gray-800">
+      <div className="bg-transparent p-8 w-full max-w-2xl mx-auto">
         <article className="prose dark:prose-dark mx-auto w-full">
           <h1>Hi! My name is Osama.</h1>
           <h2>Welcome to my personal slice of the web!</h2>

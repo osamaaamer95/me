@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import ThemeChanger from '../components/ThemeChanger';
 import SEO from '../components/SEO';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const BaseLayout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -17,7 +18,18 @@ const BaseLayout: React.FC = ({ children }) => {
   return (
     <>
       <SEO title="Home" />
-      <div className="bg-white dark:bg-gray-800 flex flex-col flex-1 h-screen">
+      <StaticImage
+        className="fixed top-0 left-0 w-full h-screen z-0 dark:bg-gray-800 opacity-5 dark:opacity-100"
+        imgClassName=""
+        src="../images/pattern2.png"
+        layout="fullWidth"
+        alt="A dinosaur"
+        placeholder="blurred"
+        transformOptions={{
+          fit: 'fill',
+        }}
+      />
+      <div className="relative bg-transparent flex flex-col flex-1 h-screen">
         <div className="flex justify-between font-sans p-4">
           <div className="dark:text-gray-200">
             {data.site.siteMetadata?.title}

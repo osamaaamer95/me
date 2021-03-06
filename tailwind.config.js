@@ -112,6 +112,7 @@ module.exports = {
   },
   variants: {
     extend: {
+      opacity: ['dark'],
       typography: ['dark'],
     },
   },
