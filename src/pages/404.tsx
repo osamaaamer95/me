@@ -1,10 +1,12 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import SEO from '../components/SEO';
 import BaseLayout from '../layouts/BaseLayout';
 
 const NotFoundPage = () => {
   return (
     <BaseLayout>
+      <SEO title="Not Found" />
       <title>Not found</title>
       <article>
         <h1>Page not found</h1>

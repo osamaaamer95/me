@@ -1,9 +1,11 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import BaseLayout from '../layouts/BaseLayout';
 
 const IndexPage = () => {
   return (
     <BaseLayout>
+      <SEO title="Home" />
       <div className="bg-white p-8 w-full dark:bg-gray-800">
         <article className="prose dark:prose-dark mx-auto w-full">
           <h1>Hi! My name is Osama.</h1>

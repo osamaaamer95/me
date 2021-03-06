@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: 'osamaaamer',
-    description: 'osamaaamer',
+    titleTemplate: '%s · osamaaamer',
+    description: 'My personal slice of the web',
     author: '@osamaaamer95',
     siteUrl: 'https://osamaaamer.com',
+    image: '/images/banner.jpg',
+    twitterUsername: '@osamaaamer95',
   },
   plugins: [
     'gatsby-plugin-gatsby-cloud',
