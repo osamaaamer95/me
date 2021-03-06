@@ -21,7 +21,7 @@ const BaseLayout: React.FC = ({ children }) => {
       <SEO title="Home" />
       <BackgroundImage />
       <div className="relative bg-transparent flex flex-col flex-1 h-screen">
-        <div className="flex justify-between font-sans p-4">
+        <div className="flex justify-between font-sans p-4 px-8">
           <HomeButton title={data.site?.siteMetadata?.title ?? 'Home'} />
           <div className="flex items-center space-x-5">
             <Link className="text-green-600 dark:text-green-300" to="/articles">Articles</Link>

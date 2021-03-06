@@ -12,9 +12,10 @@ module.exports = {
     'gatsby-plugin-gatsby-cloud',
     'gatsby-plugin-image',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingId: '264545630',
+        trackingId: `G-GTXNW8CEQB`,
+        anonymize: true,
       },
     },
     'gatsby-plugin-react-helmet',

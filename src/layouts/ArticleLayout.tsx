@@ -30,11 +30,11 @@ const ArticleLayout: React.FC<Props> = ({ children, pageContext }) => {
           />
           <BackgroundImage />
           <div className="relative bg-transparent flex flex-col flex-1 h-screen">
-            <div className="flex justify-between font-sans p-4">
+            <div className="flex justify-between font-sans p-4 px-8">
               <HomeButton title={siteMetadata?.title ?? 'Home'} />
               <ThemeChanger />
             </div>
-            <div className="flex flex-1 max-w-2xl mx-auto">
+            <div className="flex flex-1 p-8 w-full max-w-2xl mx-auto">
               <div className="prose dark:prose-dark">{children}</div>
             </div>
             <footer className="p-2 bottom-0 text-center dark:bg-gray-700 text-xs text-gray-400">
