@@ -1,8 +1,9 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import ThemeChanger from '../components/ThemeChanger';
 import SEO from '../components/SEO';
-import { StaticImage } from 'gatsby-plugin-image';
+import BackgroundImage from '../components/BackgroundImage';
+import HomeButton from '../components/HomeButton';
 
 const BaseLayout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,26 +19,14 @@ const BaseLayout: React.FC = ({ children }) => {
   return (
     <>
       <SEO title="Home" />
-      <StaticImage
-        className="top-0 left-0 w-full h-screen z-0 dark:bg-gray-800 opacity-5 dark:opacity-100"
-        style={{
-          position: 'fixed',
-        }}
-        imgClassName=""
-        src="../images/pattern2.png"
-        layout="fullWidth"
-        alt="A dinosaur"
-        placeholder="blurred"
-        transformOptions={{
-          fit: 'fill',
-        }}
-      />
+      <BackgroundImage />
       <div className="relative bg-transparent flex flex-col flex-1 h-screen">
         <div className="flex justify-between font-sans p-4">
-          <div className="dark:text-gray-200">
-            {data.site.siteMetadata?.title}
+          <HomeButton title={data.site?.siteMetadata?.title ?? 'Home'} />
+          <div className="flex items-center space-x-5">
+            <Link className="text-green-600 dark:text-green-300" to="/articles">Articles</Link>
+            <ThemeChanger />
           </div>
-          <ThemeChanger />
         </div>
         <div className="flex flex-1">{children}</div>
         <footer className="p-2 bottom-0 text-center dark:bg-gray-700 text-xs text-gray-400">

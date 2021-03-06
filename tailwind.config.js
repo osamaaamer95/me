@@ -72,13 +72,22 @@ module.exports = {
                 fontFamily: 'League Spartan',
                 fontWeight: 700,
               },
+              h3: {
+                color: theme('colors.yellow.700'),
+                fontFamily: 'League Spartan',
+                fontWeight: 500,
+              },
               p: {
                 color: theme('colors.gray.800'),
                 fontFamily: 'Junction',
                 fontWeight: 300,
               },
               li: {
+                color: theme('colors.gray.800'),
                 lineHeight: '1.5rem',
+              },
+              a: {
+                color: theme('colors.gray.800'),
               },
             },
           ],
@@ -96,12 +105,20 @@ module.exports = {
                 fontFamily: 'League Spartan',
                 fontWeight: 700,
               },
+              h3: {
+                color: theme('colors.yellow.500'),
+                fontFamily: 'League Spartan',
+                fontWeight: 500,
+              },
               p: {
                 color: theme('colors.gray.300'),
                 fontFamily: 'Junction',
                 fontWeight: 300,
               },
               li: {
+                color: theme('colors.gray.300'),
+              },
+              a: {
                 color: theme('colors.gray.300'),
               },
             },
