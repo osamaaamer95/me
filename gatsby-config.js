@@ -9,7 +9,6 @@ module.exports = {
     twitterUsername: '@osamaaamer95',
   },
   plugins: [
-    'gatsby-plugin-gatsby-cloud',
     'gatsby-plugin-image',
     {
       resolve: `gatsby-plugin-gtag`,
